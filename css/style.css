@@ -145,7 +145,7 @@ body {
 }
 
 .not_found {
-    margin-top: 20px;
+    margin-top: 5%;
     display: none;
     justify-content: center;
     align-items: center;
@@ -155,12 +155,13 @@ body {
 
 .not_found h1 {
     font-size: 30px;
-    color: #eeeeee;
+    color: #dddddd;
     margin-block-end: 15px;
+    margin-block-end: 4rem;
 }
 
 .not_found img {
-    width: 80%;
+    width: 300px;
 }
 
 
