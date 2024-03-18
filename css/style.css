@@ -72,6 +72,47 @@ body {
     color: #fff;
 }
 
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    /* gap: -5rem; */
+}
+
+.welcome h1 {
+    margin-top: 2%;
+    font-size: 1.75rem;
+    color: #fff;
+    background-color: hsla(0 10% 10% / .5);
+    padding: .85rem 1.5rem;
+    border-radius: 50%;
+    /* display: none; */
+}
+
+.welcome-image {
+    /* display: flex;
+    justify-content: flex-start; */
+}
+
+.welcome-image img {
+    width:400px;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+
+
+@keyframes up-down {
+    0% {
+        transform: translateY(6px);
+    }
+    100% {
+        transform: translateY(-6px);
+    }
+}
+
+
 .weather__body {
     display: none;
     justify-content: center;
@@ -194,6 +235,14 @@ body {
 
     .search__box input {
         width: 80%;
+    }
+
+    .welcome {
+        margin-top: 50%;
+    }
+
+    .welcome-image img {
+        width: 200px;
     }
 
     .weather__body h1 {

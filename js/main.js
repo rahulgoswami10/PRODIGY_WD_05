@@ -1,5 +1,6 @@
 const inputBox = document.querySelector('.input-box'),
      searchBtn = document.getElementById('searchBtn'),
+     welcome = document.querySelector('.welcome'),
      weather_app =document.getElementById('weather-app'),
      lca = document.querySelector('.location'),
      weather__img = document.querySelector('.weather-img'),
@@ -24,12 +25,14 @@ async function checkWeather(city) {
     if(weather__data.cod === `404`){
         not_found.style.display = "flex";
         weather__body.style.display = "none";
+        welcome.style.display = "none";
         console.log("error");
         return;
     }  
     
     not_found.style.display = "none";
     weather__body.style.display = "flex";
+    welcome.style.display = "none";
 
     lca.innerHTML = `${weather__data.name}`; 
     temperature.innerHTML = `${Math.round(weather__data.main.temp - 273.15)}°C`;
